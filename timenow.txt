@@ -1,0 +1,31 @@
+public class aaa {
+    
+    public static String timenow(){
+      String months[] = {
+      "01", "02", "03", "04",
+      "05", "06", "07", "08",
+      "09", "10", "11", "12"};
+      int year;
+      // 初始化 Gregorian 日历
+      // 使用当前时间和日期
+      // 默认为本地时间和时区
+      GregorianCalendar gcalendar = new GregorianCalendar();
+      // 显示当前时间和日期的信息
+      String nowmonth = (months[gcalendar.get(Calendar.MONTH)]);
+      int nowdate = gcalendar.get(Calendar.DATE);
+      int nowyear =  gcalendar.get(Calendar.YEAR);
+     
+      int nowhour = gcalendar.get(Calendar.HOUR);
+      int nowmin = gcalendar.get(Calendar.MINUTE);
+      int nowsec = gcalendar.get(Calendar.SECOND);
+      String timenow = nowyear+nowmonth+ nowdate+nowhour+ nowmin+nowsec;
+      return timenow;
+    }
+     
+    public static void main(String args[]) {
+     String a = timenow(); 
+     System.out.println(a);
+   }
+      
+    }
+    
