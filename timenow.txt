@@ -13,6 +13,8 @@ public class aaa {
       String nowmonth = (months[gcalendar.get(Calendar.MONTH)]);
       int nowdate = gcalendar.get(Calendar.DATE);
       int nowyear =  gcalendar.get(Calendar.YEAR);
+	  int test;
+	  String strs;
      
       int nowhour = gcalendar.get(Calendar.HOUR);
       int nowmin = gcalendar.get(Calendar.MINUTE);
@@ -27,5 +29,3 @@ public class aaa {
    }
       
 }
-    
-	i delete new add one word one line
